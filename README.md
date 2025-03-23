@@ -1,5 +1,6 @@
 <html lang="en">
-<head>
+<head>![image](https://github.com/user-attachments/assets/1538f303-7aa0-49f8-8022-6e36acaeaf0b)
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Native Gaming - Latest Video Game Updates</title>
