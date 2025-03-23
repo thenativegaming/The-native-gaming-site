@@ -64,7 +64,7 @@
     </style>
     <script>
         async function fetchGamingNews() {
-            const apiKey = "8eaae37625cb4a03accbfdc0fd8414ae"; // â Fixed API Key Quotes
+            const apiKey = "8eaae37625cb4a03accbfdc0fd8414ae";
             const url = `https://newsapi.org/v2/everything?q=video+games&sortBy=publishedAt&apiKey=${apiKey}`;
 
             try {
