@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #121212;
-            color: blue;
+            color: white;
             text-align: center;
         }
         header {
