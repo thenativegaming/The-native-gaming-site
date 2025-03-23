@@ -64,7 +64,7 @@
     </style>
     <script>
         async function fetchGamingNews() {
-            const apiKey = "8eaae37625cb4a03accbfdc0fd8414ae"; // Your News API Key
+            const apiKey = "8eaae37625cb4a03accbfdc0fd8414ae"; // Use your actual API key here
             const url = `https://newsapi.org/v2/everything?q=video+games&sortBy=publishedAt&apiKey=${apiKey}`;
 
             try {
@@ -77,6 +77,7 @@
 
                 newsList.innerHTML = ""; // Clear previous news
 
+                // Check if there are articles
                 if (data.articles.length === 0) {
                     newsList.innerHTML = "<li>No recent gaming news available.</li>";
                 } else {
