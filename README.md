@@ -64,7 +64,7 @@
     </style>
     <script>
         async function fetchGamingNews() {
-            const apiKey = "8eaae37625cb4a03accbfdc0fd8414ae"; // API Key
+            const apiKey = "8eaae37625cb4a03accbfdc0fd8414ae"; // Your News API Key
             const url = `https://newsapi.org/v2/everything?q=video+games&sortBy=publishedAt&apiKey=${apiKey}`;
 
             try {
@@ -80,6 +80,7 @@
                 if (data.articles.length === 0) {
                     newsList.innerHTML = "<li>No recent gaming news available.</li>";
                 } else {
+                    // Display the first 5 latest articles
                     data.articles.slice(0, 5).forEach(article => {
                         const listItem = document.createElement("li");
                         listItem.innerHTML = `<a href="${article.url}" target="_blank" style="color: #1e90ff; text-decoration: none;">
@@ -94,7 +95,11 @@
             }
         }
 
-        window.onload = fetchGamingNews; // Load news when the page loads
+        // Update the news every 24 hours (86,400,000 ms)
+        setInterval(fetchGamingNews, 86400000); // 24 hours in milliseconds
+
+        // Run the fetch function when the page loads
+        window.onload = fetchGamingNews;
     </script>
 </head>
 <body>
@@ -102,7 +107,7 @@
     <header>
         <h1>The Native Gaming</h1>
         <div class="logo">
-            <!-- Make sure the image file is correct or replace the link -->
+            <!-- Replace with your logo image -->
             <img src="A_stunning_4D-style_minimalistic_gaming_logo_with_.png" alt="Gaming Logo">
         </div>
     </header>
@@ -110,11 +115,11 @@
     <div class="content">
         <h2>Latest Gaming Videos</h2>
         <div class="video">
-            <!-- Replace with actual gaming trailer URL -->
+            <!-- Replace with actual gaming trailer link -->
             <iframe src="https://www.youtube.com/embed/3sJfTtzqNFg" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <!-- Replace with another gaming trailer -->
+            <!-- Another example gaming trailer -->
             <iframe src="https://www.youtube.com/embed/example_game_trailer" allowfullscreen></iframe>
         </div>
 
