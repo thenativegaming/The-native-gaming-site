@@ -111,10 +111,6 @@
         </div>
 
         <h2>Latest Gaming News</h2>
-        <ul id="news-list">
-            <li>Loading latest news...</li>
-        </ul>
-    </div>
 
     <div class="social-links">
         <h2>Follow Me</h2>
